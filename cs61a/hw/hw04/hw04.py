@@ -28,6 +28,8 @@ def taxicab(a, b):
     """
     "*** YOUR CODE HERE ***"
 
+    return abs(street(a) - street(b)) + abs(avenue(a) - avenue(b))
+
 def squares(s):
     """Returns a new list containing square roots of the elements of the
     original list that are perfect squares.
@@ -40,6 +42,14 @@ def squares(s):
     []
     """
     "*** YOUR CODE HERE ***"
+    from math import sqrt
+    root_list = []
+    for number in s:
+        root = sqrt(number)
+        if root == round(root):
+            root_list.append(int(root))
+    return root_list
+
 
 def g(n):
     """Return the value of G(n), computed recursively.
@@ -59,6 +69,11 @@ def g(n):
     True
     """
     "*** YOUR CODE HERE ***"
+    if n <= 3:
+        return n
+    else:
+        return g(n - 1) + 2 * g(n - 2) + 3 * g(n - 3)
+
 
 def g_iter(n):
     """Return the value of G(n), computed iteratively.
@@ -78,6 +93,15 @@ def g_iter(n):
     True
     """
     "*** YOUR CODE HERE ***"
+    if n <= 3:
+        return n
+    count = 3
+    num1, num2, num3 = 1, 2, 3
+    while count < n:
+        num1, num2, num3 = num2, num3, num3 + 2 * num2 + 3 * num1
+        count += 1
+    return num3
+
 
 def pingpong(n):
     """Return the nth element of the ping-pong sequence.
@@ -111,6 +135,16 @@ def pingpong(n):
     True
     """
     "*** YOUR CODE HERE ***"
+    def pingpong_next(i, value, add):
+        if i == n:
+            return value
+        elif has_seven(i) or i % 7 == 0:
+            return pingpong_next(i + 1, value - add, -add)
+        else:
+            return pingpong_next(i + 1, value + add, add)
+    return pingpong_next(1, 1, 1)
+
+
 
 def has_seven(k):
     """Returns True if at least one of the digits of k is a 7, False otherwise.
@@ -148,8 +182,25 @@ def count_change(amount):
     9828
     """
     "*** YOUR CODE HERE ***"
+    from math import log2, pow
+    def count_partitions(n, m):
+        if n == 0:  # The largest value allowed equals n
+            return 1
+        elif n < 0:  # The largest value allowed  > n
+            return 0
+        elif m == 0:
+            return 1
+        else:
+            return count_partitions(n - pow(2, m), m) + count_partitions(n, m - 1)
 
-###################
+    return count_partitions(amount, int(log2(amount)))
+
+
+
+
+
+
+    ###################
 # Extra Questions #
 ###################
 
@@ -164,4 +215,5 @@ def make_anonymous_factorial():
     >>> check(HW_SOURCE_FILE, 'make_anonymous_factorial', ['Assign', 'AugAssign', 'FunctionDef', 'Recursion'])
     True
     """
-    return 'YOUR_EXPRESSION_HERE'
+    # This is not my answer, it is too hard
+    return (lambda f: lambda k: f(f, k))(lambda f, k: k if k == 1 else mul(k, f(f, sub(k, 1))))
