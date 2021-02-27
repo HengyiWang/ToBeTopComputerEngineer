@@ -2,7 +2,6 @@
 
 This is a repository for my online learning about computer science related area
 
-------
 
 ## CS61A: The Structure and Interpretation of Computer Programs
 
