@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b16ce922-193a-4c70-9a82-99a6062afb63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/hw04.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw04.py" afterDir="false" />
-    </list>
+    <list default="true" id="b16ce922-193a-4c70-9a82-99a6062afb63" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hw04.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="217" column="31" selection-start-line="217" selection-start-column="31" selection-end-line="217" selection-end-column="31" />
+            <state relative-caret-position="277">
+              <caret line="217" column="43" selection-start-line="217" selection-start-column="43" selection-end-line="217" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -80,6 +78,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -109,18 +108,17 @@
       <option name="presentableId" value="Default" />
       <updated>1614313440486</updated>
       <workItem from="1614313443544" duration="705000" />
-      <workItem from="1614347293957" duration="7589000" />
+      <workItem from="1614347293957" duration="7931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8294000" />
+    <option name="totallyTimeSpent" value="8636000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="144" y="183" width="905" height="707" extended-state="0" />
-    <editor active="true" />
+    <frame x="262" y="96" width="905" height="707" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25492468" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25492468" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -134,7 +132,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.30731708" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.30731708" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3284553" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -153,8 +151,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hw04.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="217" column="31" selection-start-line="217" selection-start-column="31" selection-end-line="217" selection-end-column="31" />
+        <state relative-caret-position="277">
+          <caret line="217" column="43" selection-start-line="217" selection-start-column="43" selection-end-line="217" selection-end-column="43" />
         </state>
       </provider>
     </entry>
